@@ -3,24 +3,19 @@
 
 using namespace std;
 
-int gcd(int, int);
-void egcd(int, int, int&, int&);
+long long gcd(long long, long long);
+void egcd(long long, long long, long long&, long long&);
 
 int main()
 {
-    int x, y, m, n, L, gc, k, t;
+    long long x, y, m, n, L, gc, k, t;
     //freopen("data.in", "r", stdin);
-    while(scanf("%d%d%d%d%d", &x, &y, &m, &n, &L) != EOF)
+    while(scanf("%lld%lld%lld%lld%lld", &x, &y, &m, &n, &L) != EOF)
     {
         if (n == m)
         {
             printf("Impossible\n");
             continue;
-        }
-        else if (n < m)
-        {
-            swap(n, m);
-            swap(x, y);
         }
         gc = gcd(L, n - m);
         if ((x - y) % gc)
@@ -29,22 +24,16 @@ int main()
             continue;
         }
         egcd(L, n - m, t, k);
-        while (k < 0 && (x - y) > 0)
-        {
-            k += (n - m) / gc * L; 
-        }
-        while (k > 0 && (x - y) < 0)
-        {
-            k -= (n - m) / gc * L; 
-        }
-        printf("%d\n", k * (x - y) / gc);
+        k = k * (x - y) / gc;
+        k = (k % (L / gc) + L / gc) % (L / gc);
+        printf("%lld\n", k);
     }
     return 0;
 }
 
-int gcd(int a, int b)
+long long gcd(long long a, long long b)
 {
-    int r;
+    long long r;
     do
     {
         r = a % b;
@@ -54,9 +43,9 @@ int gcd(int a, int b)
     return a;
 }
 
-void egcd(int a, int b, int &x, int &y)
+void egcd(long long a, long long b, long long &x, long long &y)
 {
-    int x1, y1;
+    long long x1, y1;
     if (a % b == 0)
     {
         x = 0;
@@ -66,5 +55,4 @@ void egcd(int a, int b, int &x, int &y)
     egcd(b, a % b, x1, y1);
     x = y1;
     y = x1 - a / b * y1;
-    //printf("a=%d b=%d x=%d y=%d\n",a,b,x,y);
 }
