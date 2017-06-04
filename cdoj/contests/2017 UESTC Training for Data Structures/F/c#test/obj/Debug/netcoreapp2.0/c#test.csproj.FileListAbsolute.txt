@@ -1,0 +1,9 @@
+/home/plusls/code/oj/cdoj/contests/2017 UESTC Training for Data Structures/F/c#test/bin/Debug/netcoreapp2.0/c#test.deps.json
+/home/plusls/code/oj/cdoj/contests/2017 UESTC Training for Data Structures/F/c#test/bin/Debug/netcoreapp2.0/c#test.runtimeconfig.json
+/home/plusls/code/oj/cdoj/contests/2017 UESTC Training for Data Structures/F/c#test/bin/Debug/netcoreapp2.0/c#test.runtimeconfig.dev.json
+/home/plusls/code/oj/cdoj/contests/2017 UESTC Training for Data Structures/F/c#test/bin/Debug/netcoreapp2.0/c#test.dll
+/home/plusls/code/oj/cdoj/contests/2017 UESTC Training for Data Structures/F/c#test/bin/Debug/netcoreapp2.0/c#test.pdb
+/home/plusls/code/oj/cdoj/contests/2017 UESTC Training for Data Structures/F/c#test/obj/Debug/netcoreapp2.0/c#test.csproj.CoreCompileInputs.cache
+/home/plusls/code/oj/cdoj/contests/2017 UESTC Training for Data Structures/F/c#test/obj/Debug/netcoreapp2.0/c#test.AssemblyInfo.cs
+/home/plusls/code/oj/cdoj/contests/2017 UESTC Training for Data Structures/F/c#test/obj/Debug/netcoreapp2.0/c#test.dll
+/home/plusls/code/oj/cdoj/contests/2017 UESTC Training for Data Structures/F/c#test/obj/Debug/netcoreapp2.0/c#test.pdb

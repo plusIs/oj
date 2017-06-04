@@ -1,0 +1,5 @@
+./data > data0.in 
+./main < data0.in > out1
+./tmp < data0.in > out2
+
+g++ data.cpp -o data
