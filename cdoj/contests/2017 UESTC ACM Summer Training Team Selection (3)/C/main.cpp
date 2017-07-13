@@ -1,7 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define MAXN 100005
-int data[MAXN], t[MAXN];
 int main()
 {
     double x, result;
@@ -13,7 +11,7 @@ int main()
         for (int j = 1; j <= 9; ++j)
         {
             result = j * (pow(10, i) - 1) / (10 - x);
-            ret = result;
+            ret = result + 0.5;
             if (abs(ret - result) < 1e-6 && ret / (int)pow(10, i - 1) == j)
             {
                 isPrint = true;
